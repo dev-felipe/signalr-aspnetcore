@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="nullRow"></div>
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <form class="col-lg-6 col-sm-12">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Name</label>
+                <input type="text" class="form-control" id="userInput" placeholder="name">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="messageInput" rows="3"></textarea>
+            </div>
+            <button type="button" id="sendButton" class="btn btn-success">Send!</button>
+        </form>
+        <div class="col-lg-6 col-sm-12 border textBox">
+            <ul id="messagesList">
+
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/signalr/chat.js"></script>
